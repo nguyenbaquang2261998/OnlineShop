@@ -221,7 +221,6 @@ C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bi
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Model.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Newtonsoft.Json.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\System.Web.Helpers.dll
@@ -233,8 +232,6 @@ C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bi
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\System.Web.WebPages.Razor.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\WebGrease.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\EntityFramework.dll
-C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Model.pdb
-C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\Model.dll.config
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\System.Web.Helpers.xml
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\System.Web.Mvc.xml
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\System.Web.Optimization.xml
@@ -253,3 +250,9 @@ C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\ob
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\obj\Debug\WebOnlineStore.csproj.CopyComplete
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\obj\Debug\WebOnlineStore.dll
 C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\obj\Debug\WebOnlineStore.pdb
+C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\PagedList.dll
+C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\PagedList.Mvc.dll
+C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\PagedList.xml
+C:\Users\HP\Desktop\Education\CN Web\OnlineShop\WebOnlineStore\WebOnlineStore\bin\PagedList.Mvc.xml

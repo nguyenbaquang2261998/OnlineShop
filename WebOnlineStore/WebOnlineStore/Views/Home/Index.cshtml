@@ -1,14 +1,17 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@using WebOnlineStore.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.PagedList<WebOnlineStore.Models.SANPHAM>
 <div class="main">
     <div class="content">
         <div class="content_top">
             <div class="heading">
-                <h3>Laptop học tập- văn phòng</h3>
+                <h3>Sản phẩm bán chạy</h3>
             </div>
             @*<div class="sort">
                     <p>
@@ -32,149 +35,45 @@
                     </p>
                 </div>*@
             <div class="page-no">
-                <p>
-                    Trang:<ul>
-                        <li><a href="#">1</a></li>
-                        <li class="active"><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>[<a href="#"> Tiếp>>></a>]</li>
-                    </ul>
-                </p>
+                @Html.PagedListPager(Model, (page) => Url.Action("Index", "Home", new { keyword = ViewBag.Keyword, page = page }))
             </div>
-            <div class="clear"></div>
-        </div>
-        <div class="section group">
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/feature-pic1.png" alt="" /></a>
-                <h2>Dell </h2>
-                <p>Laptop văn phòng cao cấp. Intel Core i5 5200U, RAM 8GB, SSD 120GB, màn hình 14 Inch Full HD</p>
-                <p><span class="strike">7.000.000</span><span class="price">7.000.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/feature-pic1.png" alt="" /></a>
-                <h2>Dell </h2>
-                <p>Laptop văn phòng cao cấp. Intel Core i5 5200U, RAM 8GB, SSD 120GB, màn hình 14 Inch Full HD</p>
-                <p><span class="strike">7.000.000</span><span class="price">7.000.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/feature-pic1.png" alt="" /></a>
-                <h2>Dell </h2>
-                <p>Laptop văn phòng cao cấp. Intel Core i5 5200U, RAM 8GB, SSD 120GB, màn hình 14 Inch Full HD</p>
-                <p><span class="strike">7.000.000</span><span class="price">7.000.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/feature-pic1.png" alt="" /></a>
-                <h2>Dell </h2>
-                <p>Laptop văn phòng cao cấp. Intel Core i5 5200U, RAM 8GB, SSD 120GB, màn hình 14 Inch Full HD</p>
-                <p><span class="strike">7.000.000</span><span class="price">7.000.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-        </div>
-        <div class="content_bottom">
-            <div class="heading">
-                <h3>Laptop Gamming - Đồ họa</h3>
-            </div>
-            @*<div class="sort">
-                    <p>
-                        Sắp xếp theo:
-                        <select>
-                            <option>Giá ( Thấp nhất)</option>
-                            <option>Giá ( Cao nhất) </option>
-                        </select>
-                    </p>
-                </div>*@
-            <div class="page-no">
-                <p>
-                    Trang:<ul>
-                        <li><a href="#">1</a></li>
-                        <li class="active"><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>[<a href="#"> Tiếp>>></a>]</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="section group">
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/new-pic1.jpg" alt="" /></a>
-                <div class="discount">
-                    <span class="percentage">40%</span>
-                </div>
-                <h2>Macbook Pro 2019 </h2>
-                <p><span class="strike">32.000.000</span><span class="price">29.500.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/new-pic1.jpg" alt="" /></a>
-                <div class="discount">
-                    <span class="percentage">40%</span>
-                </div>
-                <h2>Macbook Pro 2019 </h2>
-                <p><span class="strike">32.000.000</span><span class="price">29.500.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/new-pic1.jpg" alt="" /></a>
-                <div class="discount">
-                    <span class="percentage">40%</span>
-                </div>
-                <h2>Macbook Pro 2019 </h2>
-                <p><span class="strike">32.000.000</span><span class="price">29.500.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            <div class="grid_1_of_4 images_1_of_4">
-                <a href="preview-3.html"><img src="/Content/images/new-pic1.jpg" alt="" /></a>
-                <div class="discount">
-                    <span class="percentage">40%</span>
-                </div>
-                <h2>Macbook Pro 2019 </h2>
-                <p><span class="strike">32.000.000</span><span class="price">29.500.000</span></p>
-                <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
-                <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
-            </div>
-            @*<div class="grid_1_of_4 images_1_of_4">
-                    <a href="preview-4.html"><img src="/Content/images/new-pic2.jpg" alt="" /></a>
-                    <div class="discount">
-                        <span class="percentage">22%</span>
-                    </div>
-                    <h2>Lorem Ipsum is simply </h2>
-                    <p><span class="strike">$667.22</span><span class="price">$621.75</span></p>
-                    <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-4.html" class="cart-button">Add to Cart</a></span></div>
-                    <div class="button"><span><a href="preview-4.html" class="details">Details</a></span></div>
-                </div>
-                <div class="grid_1_of_4 images_1_of_4">
-                    <a href="preview-2.html"><img src="/Content/images/feature-pic2.jpg" alt="" /></a>
-                    <div class="discount">
-                        <span class="percentage">55%</span>
-                    </div>
-                    <h2>Lorem Ipsum is simply </h2>
-                    <p><span class="strike">$457.22</span><span class="price">$428.02</span></p>
-                    <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-2.html" class="cart-button">Add to Cart</a></span> </div>
-                    <div class="button"><span><a href="preview-2.html" class="details">Details</a></span></div>
-                </div>
-                <div class="grid_1_of_4 images_1_of_4">
-                    <img src="/Content/images/new-pic3.jpg" alt="" />
-                    <div class="discount">
-                        <span class="percentage">66%</span>
-                    </div>
-                    <h2>Lorem Ipsum is simply </h2>
-                    <p><span class="strike">$643.22</span><span class="price">$457.88</span></p>
-                    <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="#" class="cart-button">Add to Cart</a></span> </div>
-                    <div class="button"><span><a href="#" class="details">Details</a></span></div>
-                </div>*@
-        </div>
+            @*<p>
+                Trang:<ul>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>[<a href="#"> Tiếp>>></a>]</li>
+                </ul>
+            </p>
+        </div>*@
+        <div class="clear"></div>
     </div>
+    <div class="section group">
+        @{var i = 0;
+            List<SANPHAM> list = new List<SANPHAM>();
+            foreach (SANPHAM P in Model)
+            {
+                list.Add(P);
+                i++;
+                if (i % 4 == 0 || i == Model.Count())
+                {
+                    foreach (SANPHAM sp in list)
+                    {
+                        <div class="grid_1_of_4 images_1_of_4">
+                            <a href="preview-3.html"><img src="/Content/images/@sp.ImgLink" alt="" /></a>
+                            <h2>@sp.tensanpham </h2>
+                            <p>@sp.memory</p>
+                            <p><span class="price">@sp.giabd</span></p>
+                            <div class="button"><span><img src="/Content/images/cart.jpg" alt="" /><a href="preview-3.html" class="cart-button">Đặt hàng</a></span> </div>
+                            <div class="button"><span><a href="preview-3.html" class="details">Chi tiết</a></span></div>
+                        </div>
+                    }
+                    list = new List<SANPHAM>();
+                }
+            }
+        }
+    </div>
+</div>
 </div>
 
 @section _Banner
@@ -194,7 +93,7 @@
                 </div>
                 <div class="listview_1_of_2 images_1_of_2">
                     <div class="listimg listimg_2_of_1">
-                        <a href="preview-5.html"><img src="/Content/images/pic3.png" alt="" / ></a>
+                        <a href="preview-5.html"><img src="/Content/images/pic3.png" alt="" /></a>
                     </div>
                     <div class="text list_2_of_1">
                         <h2>Sansung</h2>
