@@ -141,21 +141,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Code\SessionHelper.cs" />
-    <Compile Include="Areas\Admin\Code\UserSession.cs" />
-    <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
-    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
-    <Compile Include="Areas\Admin\Models\LoginModel.cs" />
+    <Compile Include="Areas\Admin\Models\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Areas\Admin\Models\CustomPrincipal.cs" />
+    <Compile Include="Areas\Admin\Models\SessionPersister.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\BINHLUAN.cs" />
     <Compile Include="Models\CTDONHANG.cs" />
     <Compile Include="Models\DANHMUC.cs" />
     <Compile Include="Models\DONHANG.cs" />
+    <Compile Include="Models\Function\TAIKHOAN.cs" />
     <Compile Include="Models\KHOANGGIA.cs" />
     <Compile Include="Models\MyDB.cs" />
     <Compile Include="Models\NHOMTIN.cs" />
@@ -165,6 +165,7 @@
     <Compile Include="Models\SPGIAMGIA.cs" />
     <Compile Include="Models\TAIKHOAN.cs" />
     <Compile Include="Models\TINTUC.cs" />
+    <Compile Include="Models\Function\AcountModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -351,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
